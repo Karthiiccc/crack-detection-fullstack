@@ -47,8 +47,8 @@ Place these files in the `Backend/` directory before running the application.
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/yourusername/crack-detection-project.git
-cd crack-detection-project
+git clone https://github.com/Karthiiccc/crack-detection-fullstack.git
+cd crack-detection-fullstack
 ```
 
 ### 2. Backend Setup
