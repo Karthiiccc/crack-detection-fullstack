@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-lead-news">
+      <rect width="30" height="30"/>
+    </clipPath>
+  </defs>
+  <g id="lead-news" clip-path="url(#clip-lead-news)">
+    <path id="Union_106" data-name="Union 106" d="M8905.606,11986.022a1.007,1.007,0,0,1-.205-.021H8885a1,1,0,0,1-1-1v-28a1,1,0,0,1,1-1h23a1,1,0,0,1,1,1v27.022h3v-18.146a1,1,0,1,1,2,0v19.146a1,1,0,0,1-1,1ZM8886,11984h21v-26h-21Zm3-3.606a1,1,0,1,1,0-2h7.361a1,1,0,0,1,0,2Zm0-5a1,1,0,1,1,0-2h14.722a1,1,0,0,1,0,2Zm0-5.2a1,1,0,1,1,0-2h14.722a1,1,0,0,1,0,2Zm0-4.2a1,1,0,0,1-1-1v-4a1,1,0,0,1,1-1h15a1,1,0,0,1,1,1v4a1,1,0,0,1-1,1Zm1-2h13v-2h-13Z" transform="translate(-8884 -11956)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./Backend:/app
+    environment:
+      - PYTHONPATH=/app
+    networks:
+      - crack-detection-network
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./crack-detection-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - crack-detection-network
+    restart: unless-stopped
+
+  frontend-dev:
+    build:
+      context: ./crack-detection-frontend
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./crack-detection-frontend:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - REACT_APP_API_URL=http://localhost:8000
+    depends_on:
+      - backend
+    networks:
+      - crack-detection-network
+
+networks:
+  crack-detection-network:
+    driver: bridge

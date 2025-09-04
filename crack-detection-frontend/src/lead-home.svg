@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-lead-home">
+      <rect width="30" height="30"/>
+    </clipPath>
+  </defs>
+  <g id="lead-home" clip-path="url(#clip-lead-home)">
+    <g id="_4213424_building_estate_home_house_property_icon" data-name="4213424_building_estate_home_house_property_icon" transform="translate(-7 -2.5)">
+      <path id="Path_464" data-name="Path 464" d="M36,15.946l-.05-.169L22.125,2.5h0L8,15.946V32.5H19.25V21.657h5V32.5H36ZM34,30.572H26.25V19.729h-9V30.572H10V16.982L22.125,5.223,34,16.765Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>
