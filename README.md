@@ -1,6 +1,6 @@
-﻿# Crack Detection System
+# Crack Detection System
 
-A full-stack application for detecting structural cracks using AI models and generating professional reports. 
+A full-stack application for detecting structural cracks using AI models and generating professional reports.
 
 ## Features
 
@@ -14,15 +14,15 @@ A full-stack application for detecting structural cracks using AI models and gen
 
 ```
 Crack_detection_Project3/
- Backend/                  # Python FastAPI backend
-    api_v_2_3.py         # Main API
-    model_loader.py      # AI models
-    report_service.py    # PDF generation
-    requirements.txt     # Dependencies
- crack-detection-frontend/ # React frontend
-    src/                 # Source code
-    package.json         # Dependencies
- requirements.txt         # Python dependencies
+├── Backend/                  # Python FastAPI backend
+│   ├── api_v_2_3.py         # Main API
+│   ├── model_loader.py      # AI models
+│   ├── report_service.py    # PDF generation
+│   └── requirements.txt     # Dependencies
+├── crack-detection-frontend/ # React frontend
+│   ├── src/                 # Source code
+│   └── package.json         # Dependencies
+└── requirements.txt         # Python dependencies
 ```
 
 ## Prerequisites
@@ -37,20 +37,20 @@ The AI model files are not included in this repository due to their large size. 
 
 ### Required Model Files:
 - **`best.pt`** - YOLO detection model (~50MB)  
-  [ Download best.pt](https://drive.google.com/file/d/1etz_qNtXJVFnJ3S6QvX2A_4EKk6WMnxH/view?usp=drive_link)
+  [📥 Download best.pt](https://drive.google.com/file/d/1etz_qNtXJVFnJ3S6QvX2A_4EKk6WMnxH/view?usp=drive_link)
 
 - **`categorization.h5`** - CNN classification model (~15MB)  
-  [ Download categorization.h5](https://drive.google.com/file/d/17CsWNvWGAGNMCpBwD5V3zZmahzdBF9pw/view?usp=drive_link)
+  [📥 Download categorization.h5](https://drive.google.com/file/d/17CsWNvWGAGNMCpBwD5V3zZmahzdBF9pw/view?usp=drive_link)
 
 - **`Classification.keras`** - Backup classification model (~15MB)  
-  [ Download Classification.keras](https://drive.google.com/file/d/14kdQqhU0lrA-qckTkVHfA2w1zTWyAdp8/view?usp=drive_link)
+  [📥 Download Classification.keras](https://drive.google.com/file/d/14kdQqhU0lrA-qckTkVHfA2w1zTWyAdp8/view?usp=drive_link)
 
 ### Installation Instructions:
 1. Click each download link above to get the model files
 2. Place all three files directly in the `Backend/` directory  
 3. Verify file names match exactly: `best.pt`, `categorization.h5`, `Classification.keras`
 
- **Important**: All three model files are required for the application to work properly.
+> **Important**: All three model files are required for the application to work properly.
 
 ## Setup
 
@@ -118,7 +118,6 @@ docker-compose up --build
 - Model files must be downloaded separately from Google Drive links above
 - Minimum 4GB RAM recommended
 - Internet connection for initial setup
-
 ## License
 
 MIT License - see LICENSE file for details.
